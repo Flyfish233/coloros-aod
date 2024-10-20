@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ColorOS 全天候息屏</string>
+    <string name="xposed_desc">使 ColorOS 灵感接续息屏显示锁屏壁纸。\n开发者：Flyfish233</string>
+</resources>
