@@ -3,6 +3,8 @@
 在 ColorOS 15 上引入的**灵感接续**息屏模式支持全天候息屏，即全局 AoD。本模块强制所有灵感接续息屏开启全局
 AoD 息屏。息屏效果见下图，使用 ADB 截取。
 
+[下载](https://github.com/Flyfish233/coloros-aod/releases)
+
 ## 如何使用
 
 1. 在 Xposed 管理器中启用模块，然后重新启动设备。
