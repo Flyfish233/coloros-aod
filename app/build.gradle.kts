@@ -12,8 +12,8 @@ android {
         applicationId = "com.flyfish233.aodwallpaper"
         minSdk = 35
         targetSdk = 35
-        versionName = "1"
-        versionCode = 1
+        versionName = "2"
+        versionCode = 2
 
     }
     buildTypes {
