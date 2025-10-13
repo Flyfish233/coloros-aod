@@ -6,14 +6,14 @@ plugins {
 
 android {
     namespace = "com.flyfish233.aodwallpaper"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.flyfish233.aodwallpaper"
         minSdk = 35
-        targetSdk = 35
-        versionName = "3"
-        versionCode = 3
+        targetSdk = 36
+        versionName = "5"
+        versionCode = 5
 
     }
     buildTypes {
@@ -32,15 +32,17 @@ android {
             excludes += "/DebugProbesKt.bin"
         }
     }
-    kotlinOptions {
-        freeCompilerArgs = listOf(
-            "-Xno-param-assertions", "-Xno-call-assertions", "-Xno-receiver-assertions"
-        )
-    }
     buildFeatures {
         buildConfig = true
     }
     kotlin {
+        compilerOptions {
+            freeCompilerArgs.addAll(
+                "-Xno-param-assertions",
+                "-Xno-call-assertions",
+                "-Xno-receiver-assertions"
+            )
+        }
         jvmToolchain(21)
     }
 }
@@ -50,4 +52,6 @@ dependencies {
     implementation(libs.yuki.hookapi)
     ksp(libs.yuki.hookapi.ksp.xposed)
     implementation(libs.core.ktx)
+    implementation(libs.kavaref.core)
+    implementation(libs.kavaref.extension)
 }

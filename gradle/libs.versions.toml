@@ -8,12 +8,14 @@ kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 [versions]
 
-agp = "8.7.1"
-kotlin = "2.1.0-Beta2"
-ksp = "2.1.0-Beta2-1.0.25"
+agp = "8.13.0"
+kotlin = "2.2.21-RC"
+ksp = "2.2.21-RC-2.0.4"
 xposed-api = "82"
-yuki-hookapi = "1.2.1"
-core-ktx = "1.15.0-rc01"
+yuki-hookapi = "1.3.1"
+core-ktx = "1.17.0"
+kavaref-core = "1.0.2"
+kavaref-extension = "1.0.1"
 
 [libraries]
 
@@ -21,3 +23,5 @@ xposed-api = { group = "de.robv.android.xposed", name = "api", version.ref = "xp
 yuki-hookapi = { group = "com.highcapable.yukihookapi", name = "api", version.ref = "yuki-hookapi" }
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 yuki-hookapi-ksp-xposed = { group = "com.highcapable.yukihookapi", name = "ksp-xposed", version.ref = "yuki-hookapi" }
+kavaref-core = { group = "com.highcapable.kavaref", name = "kavaref-core", version.ref = "kavaref-core" }
+kavaref-extension = { group = "com.highcapable.kavaref", name = "kavaref-extension", version.ref = "kavaref-extension" }
